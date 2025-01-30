@@ -13,7 +13,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
     return (
         <html lang="en" suppressHydrationWarning>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="w-full overflow-x-hidden">
+        <div className="w-full overflow-x-hidden px-4 lg:px-0">
             <Appbar/>
             {children}
         </div>
