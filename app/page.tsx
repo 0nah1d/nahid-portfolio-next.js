@@ -8,6 +8,8 @@ export default function Home() {
                 alt="image"
                 height={600}
                 width={320}
+                priority
+                loading="eager"
             />
         </div>
     );
