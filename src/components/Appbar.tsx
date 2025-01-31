@@ -1,9 +1,9 @@
 "use client";
-import React, {useEffect, useState} from "react";
+import React, {JSX, useEffect, useState} from "react";
 import Link from "next/link";
 import {useScrollLockWithLenis} from "@/hooks/scrollLockWithLenis";
 
-export default function Appbar() {
+export default function Appbar(): JSX.Element {
     const [isOpen, setIsOpen] = useState(false);
     const toggleLenis = useScrollLockWithLenis();
 

@@ -1,7 +1,7 @@
 import {useEffect, useRef} from "react";
 import Lenis from "@studio-freight/lenis";
 
-export function useScrollLockWithLenis() {
+export function useScrollLockWithLenis(): (isPaused: boolean) => void {
     const lenisRef = useRef<Lenis | null>(null);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ export function useScrollLockWithLenis() {
         };
     }, []);
 
-    return (isPaused: boolean) => {
+    return (isPaused: boolean): void => {
         if (isPaused) {
             lenisRef.current?.stop();
         } else {
