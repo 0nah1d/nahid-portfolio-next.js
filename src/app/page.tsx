@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {JSX} from "react";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
@@ -15,15 +14,3 @@ export default function Home(): JSX.Element {
         </div>
     );
 }
-
-
-// <div className="flex justify-center items-center h-screen w-screen">
-//     <Image
-//         src="/girl.jpg"
-//         alt="Image"
-//         width={300}
-//         height={800}
-//         priority
-//         style={{width: "auto", height: "auto"}}
-//     />
-// </div>
