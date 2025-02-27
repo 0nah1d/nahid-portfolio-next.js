@@ -1,8 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import React from "react";
-import {geistMono, geistSans} from "@/lib/fonts";
-import Appbar from "@/components/Appbar";
+import {vt323} from "@/lib/fonts";
 
 export const metadata: Metadata = {
     title: "Nahid Portfolio",
@@ -12,9 +11,8 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="w-full overflow-x-hidden px-4 lg:px-0">
-            <Appbar/>
+        <body className={`${vt323.variable} antialiased`}>
+        <div className="w-full h-screen overflow-hidden px-4 lg:px-0">
             {children}
         </div>
         </body>

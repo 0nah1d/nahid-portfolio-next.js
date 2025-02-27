@@ -1,11 +1,7 @@
-import {Geist, Geist_Mono} from "next/font/google";
+import {VT323} from "next/font/google";
 
-export const geistSans = Geist({
-    variable: "--font-geist-sans",
+export const vt323 = VT323({
+    weight: "400",
     subsets: ["latin"],
-});
-
-export const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
+    variable: "--font-vt323",
 });
